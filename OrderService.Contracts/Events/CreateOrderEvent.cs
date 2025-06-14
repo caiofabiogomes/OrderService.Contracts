@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace OrderService.Contracts.Events
 {
-    public class OrderCreatedEvent
+    public class CreateOrderEvent
     {
         [Required]
         public Guid CustomerId { get; set; }
