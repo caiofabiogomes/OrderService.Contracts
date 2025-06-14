@@ -6,6 +6,9 @@ namespace OrderService.Contracts.Events
     public class CreateOrderEvent
     {
         [Required]
+        public Guid OrderId { get; set; }
+        
+        [Required]
         public Guid CustomerId { get; set; }
 
         [Required]
